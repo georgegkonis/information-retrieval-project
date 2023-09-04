@@ -12,6 +12,7 @@ def index_data(records, index):
 
 def search_books(es: Elasticsearch, term: str, user_id: int):
     should_clauses = [
+        {"match": {"isbn": term}},
         {"match": {"book_title": term}},
         {"match": {"book_author": term}},
         {"match": {"summary": term}},
@@ -41,7 +42,7 @@ def search_books(es: Elasticsearch, term: str, user_id: int):
         rating_res = es.search(index="ratings", query={
             "bool": {
                 "must": [
-                    {"match": {"user_id": user_id}},
+                    {"match": {"uid": user_id}},
                     {"match": {"isbn": isbn}}
                 ]
             }
@@ -52,9 +53,9 @@ def search_books(es: Elasticsearch, term: str, user_id: int):
             user_rating = rating_res["hits"]["hits"][0]["_source"]["rating"]
 
         # Simple combination of Elasticsearch score and user rating.
-        combined_score = es_score + user_rating
+        combined_score = es_score + 2 * user_rating
 
-        scored_books.append((hit["_source"], combined_score, es_score, user_rating))
+        scored_books.append((hit["_source"], combined_score))
 
     # 3. Sort by combined score.
     scored_books.sort(key=lambda x: x[1], reverse=True)
@@ -62,3 +63,5 @@ def search_books(es: Elasticsearch, term: str, user_id: int):
     # 4. Return top 10%.
     top_10_percent = int(0.1 * len(scored_books))
     return scored_books[:top_10_percent]
+
+#%%
