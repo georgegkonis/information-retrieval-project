@@ -1,4 +1,4 @@
-version: '3'
+version: 'latest'
 
 services:
   elasticsearch:
@@ -6,7 +6,7 @@ services:
     environment:
       - node.name=elasticsearch
       - discovery.type=single-node
-      - bootstrap.memory_lock=trueX
+      - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
     ulimits:
       memlock:

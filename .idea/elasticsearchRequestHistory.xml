@@ -3,70 +3,157 @@
   <component name="ElasticsearchRequestHistory">
     <option name="requestHistory">
       <map>
-        <entry key="f933bb55-519c-4b04-87bb-8599267148c1">
+        <entry key="9266fe29-9405-4b26-bee6-f1384e217b8f">
           <value>
             <list>
               <HistoryRequest>
-                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;bool&quot;: {&#10;      &quot;filter&quot;: {&#10;        &quot;bool&quot;: {&#10;          &quot;minimum_should_match&quot;: 1,&#10;          &quot;should&quot;: [&#10;            {&#10;              &quot;multi_match&quot;: {&#10;                &quot;lenient&quot;: true,&#10;                &quot;fields&quot;: &quot;*&quot;,&#10;                &quot;query&quot;: 1273,&#10;                &quot;type&quot;: &quot;best_fields&quot;&#10;              }&#10;            }&#10;          ],&#10;          &quot;_name&quot;: &quot;KQL_filter&quot;&#10;        }&#10;      },&#10;      &quot;must&quot;: {&#10;        &quot;match_all&quot;: {}&#10;      }&#10;    }&#10;  },&#10;  &quot;highlight&quot;: {&#10;    &quot;pre_tags&quot;: [&#10;      &quot;@plugin-highlighted-field@&quot;&#10;    ],&#10;    &quot;post_tags&quot;: [&#10;      &quot;@/plugin-highlighted-field@&quot;&#10;    ],&#10;    &quot;fields&quot;: {&#10;      &quot;*&quot;: {}&#10;    },&#10;    &quot;fragment_size&quot;: 2147483647&#10;  }&#10;}" />
-                <option name="path" value="/users/_search" />
-              </HistoryRequest>
-              <HistoryRequest>
-                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
-                <option name="path" value="/users/_search" />
-              </HistoryRequest>
-              <HistoryRequest>
-                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;bool&quot;: {&#10;      &quot;must&quot;: {&#10;        &quot;match_all&quot;: {}&#10;      },&#10;      &quot;filter&quot;: {&#10;        &quot;bool&quot;: {&#10;          &quot;minimum_should_match&quot;: 1,&#10;          &quot;should&quot;: [&#10;            {&#10;              &quot;multi_match&quot;: {&#10;                &quot;lenient&quot;: true,&#10;                &quot;fields&quot;: &quot;*&quot;,&#10;                &quot;query&quot;: 1879384493,&#10;                &quot;type&quot;: &quot;best_fields&quot;&#10;              }&#10;            }&#10;          ],&#10;          &quot;_name&quot;: &quot;KQL_filter&quot;&#10;        }&#10;      }&#10;    }&#10;  },&#10;  &quot;highlight&quot;: {&#10;    &quot;pre_tags&quot;: [&#10;      &quot;@plugin-highlighted-field@&quot;&#10;    ],&#10;    &quot;post_tags&quot;: [&#10;      &quot;@/plugin-highlighted-field@&quot;&#10;    ],&#10;    &quot;fields&quot;: {&#10;      &quot;*&quot;: {}&#10;    },&#10;    &quot;fragment_size&quot;: 2147483647&#10;  }&#10;}" />
-                <option name="path" value="/books/_search" />
-              </HistoryRequest>
-              <HistoryRequest>
-                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;bool&quot;: {&#10;      &quot;must&quot;: [&#10;        {&#10;          &quot;term&quot;: {&#10;            &quot;uid&quot;: {&#10;              &quot;value&quot;: &quot;8&quot;&#10;            }&#10;          }&#10;        },&#10;        {&#10;          &quot;terms&quot;: {&#10;            &quot;isbn&quot;: [&#10;              &quot;0374157065&quot;&#10;            ]&#10;          }&#10;        }&#10;      ]&#10;    }&#10;  }&#10;}" />
                 <option name="path" value="/ratings/_search" />
               </HistoryRequest>
               <HistoryRequest>
-                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;bool&quot;: {&#10;      &quot;filter&quot;: {&#10;        &quot;bool&quot;: {&#10;          &quot;minimum_should_match&quot;: 1,&#10;          &quot;should&quot;: [&#10;            {&#10;              &quot;multi_match&quot;: {&#10;                &quot;lenient&quot;: true,&#10;                &quot;fields&quot;: &quot;*&quot;,&#10;                &quot;query&quot;: &quot;death&quot;,&#10;                &quot;type&quot;: &quot;best_fields&quot;&#10;              }&#10;            }&#10;          ],&#10;          &quot;_name&quot;: &quot;KQL_filter&quot;&#10;        }&#10;      },&#10;      &quot;must&quot;: {&#10;        &quot;match_all&quot;: {}&#10;      }&#10;    }&#10;  },&#10;  &quot;highlight&quot;: {&#10;    &quot;pre_tags&quot;: [&#10;      &quot;@plugin-highlighted-field@&quot;&#10;    ],&#10;    &quot;post_tags&quot;: [&#10;      &quot;@/plugin-highlighted-field@&quot;&#10;    ],&#10;    &quot;fields&quot;: {&#10;      &quot;*&quot;: {}&#10;    },&#10;    &quot;fragment_size&quot;: 2147483647&#10;  }&#10;}" />
-                <option name="path" value="/books/_search" />
-              </HistoryRequest>
-              <HistoryRequest>
-                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
-                <option name="path" value="/books/_search" />
-              </HistoryRequest>
-              <HistoryRequest>
-                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;bool&quot;: {&#10;      &quot;must&quot;: [&#10;        {&#10;          &quot;term&quot;: {&#10;            &quot;uid&quot;: {&#10;              &quot;value&quot;: &quot;8&quot;&#10;            }&#10;          }&#10;        },&#10;        {&#10;          &quot;terms&quot;: {&#10;            &quot;isbn&quot;: [&#10;              &quot;0002005018&quot;,&#10;              &quot;0374157065&quot;&#10;            ]&#10;          }&#10;        }&#10;      ]&#10;    }&#10;  }&#10;}" />
                 <option name="path" value="/ratings/_search" />
               </HistoryRequest>
               <HistoryRequest>
-                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
-                <option name="path" value="/users/_search" />
-              </HistoryRequest>
-              <HistoryRequest>
-                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
-                <option name="path" value="/books/_search" />
-              </HistoryRequest>
-              <HistoryRequest>
-                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
-                <option name="path" value="/users/_search" />
-              </HistoryRequest>
-              <HistoryRequest>
-                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
-                <option name="path" value="/books/_search" />
-              </HistoryRequest>
-              <HistoryRequest>
-                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
-                <option name="path" value="/users/_search" />
-              </HistoryRequest>
-              <HistoryRequest>
-                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
+                <option name="body" value="{&#10;  &quot;size&quot;: 100,&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;uid&quot;: {&#10;        &quot;value&quot;: &quot;8&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
                 <option name="path" value="/ratings/_search" />
               </HistoryRequest>
               <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;bool&quot;: {&#10;      &quot;must&quot;: [&#10;        {&#10;          &quot;term&quot;: {&#10;            &quot;uid&quot;: {&#10;              &quot;value&quot;: &quot;8&quot;&#10;            }&#10;          }&#10;        },&#10;        {&#10;          &quot;terms&quot;: {&#10;            &quot;isbn&quot;: [&#10;              &quot;0002005018&quot;&#10;            ]&#10;          }&#10;        }&#10;      ]&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;bool&quot;: {&#10;      &quot;must&quot;: [&#10;        {&#10;          &quot;term&quot;: {&#10;            &quot;uid&quot;: {&#10;              &quot;value&quot;: &quot;10&quot;&#10;            }&#10;          }&#10;        },&#10;        {&#10;          &quot;terms&quot;: {&#10;            &quot;isbn&quot;: [&#10;              &quot;0002005018&quot;&#10;            ]&#10;          }&#10;        }&#10;      ]&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;bool&quot;: {&#10;      &quot;must&quot;: [&#10;        {&#10;          &quot;term&quot;: {&#10;            &quot;uid&quot;: {&#10;              &quot;value&quot;: &quot;10&quot;&#10;            }&#10;          },&#10;          &quot;terms&quot;: {&#10;            &quot;isbn&quot;: [&#10;              &quot;0002005018&quot;&#10;            ]&#10;          }&#10;        }&#10;      ]&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;bool&quot;: {&#10;      &quot;must&quot;: [&#10;        {&#10;          &quot;term&quot;: {&#10;            &quot;uid&quot;: {&#10;              &quot;value&quot;: &quot;12&quot;&#10;            }&#10;          },&#10;          &quot;terms&quot;: {&#10;            &quot;isbn&quot;: [&#10;              &quot;0002005018&quot;&#10;            ]&#10;          }&#10;        }&#10;      ]&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;bool&quot;: {&#10;      &quot;should&quot;: [&#10;        {&#10;          &quot;terms&quot;: {&#10;            &quot;isbn&quot;: [&#10;              &quot;0002005018&quot;&#10;            ]&#10;          },&#10;          &quot;term&quot;: {&#10;            &quot;uid&quot;: {&#10;              &quot;value&quot;: &quot;10&quot;&#10;            }&#10;          }&#10;        }&#10;      ]&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;bool&quot;: {&#10;      &quot;must&quot;: [&#10;        {&#10;          &quot;terms&quot;: {&#10;            &quot;isbn&quot;: [&#10;              &quot;0002005018&quot;&#10;            ]&#10;          },&#10;          &quot;term&quot;: {&#10;            &quot;uid&quot;: {&#10;              &quot;value&quot;: &quot;10&quot;&#10;            }&#10;          }&#10;        }&#10;      ]&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;bool&quot;: {&#10;      &quot;must&quot;: [&#10;        {&#10;          &quot;terms&quot;: {&#10;            &quot;isbn&quot;: [&#10;              &quot;0002005018&quot;&#10;            ]&#10;          }&#10;        }&#10;      ]&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;bool&quot;: {&#10;      &quot;must&quot;: [&#10;        {&#10;          &quot;terms&quot;: {&#10;            &quot;isbn&quot;: [&#10;              &quot;0002005018&quot;,&#10;              &quot;0002005018&quot;,&#10;              &quot;0002005018&quot;,&#10;              &quot;0002005018&quot;&#10;            ]&#10;          },&#10;          &quot;term&quot;: {&#10;            &quot;uid&quot;: {&#10;              &quot;value&quot;: &quot;10&quot;&#10;            }&#10;          }&#10;        }&#10;      ]&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;size&quot;: 100,&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;country&quot;: {&#10;        &quot;value&quot;: &quot;usa&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/users/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;uid&quot;: {&#10;        &quot;value&quot;: &quot;1012&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/users/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;uid&quot;: {&#10;        &quot;value&quot;: &quot;8&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;uid&quot;: {&#10;        &quot;value&quot;: &quot;1012&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/users/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;uid&quot;: {&#10;        &quot;value&quot;: &quot;2&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/users/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;uid&quot;: {&#10;        &quot;value&quot;: &quot;10&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/users/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;terms&quot;: {&#10;      &quot;uid&quot;: [&#10;        &quot;10&quot;,&#10;        &quot;12&quot;,&#10;        &quot;100&quot;,&#10;        &quot;2&quot;&#10;      ]&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/users/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;uid&quot;: {&#10;        &quot;value&quot;: &quot;9&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/users/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;uid&quot;: {&#10;        &quot;value&quot;: &quot;100&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/users/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;uid&quot;: {&#10;        &quot;value&quot;: &quot;9&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/users/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;uid&quot;: {&#10;        &quot;value&quot;: &quot;10&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/users/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;uid&quot;: {&#10;        &quot;value&quot;: &quot;8&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;uid&quot;: {&#10;        &quot;value&quot;: &quot;2&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;uid&quot;: {&#10;        &quot;value&quot;: &quot;100&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;uid&quot;: {&#10;        &quot;value&quot;: &quot;10&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;uid&quot;: {&#10;        &quot;value&quot;: &quot;13&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;term&quot;: {&#10;      &quot;uid&quot;: {&#10;        &quot;value&quot;: &quot;12&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 100,&#10;  &quot;sort&quot;: [&#10;    {&#10;      &quot;_score&quot;: {&#10;        &quot;order&quot;: &quot;desc&quot;&#10;      }&#10;    }&#10;  ],&#10;  &quot;query&quot;: {&#10;    &quot;multi_match&quot;: {&#10;      &quot;query&quot;: &quot;tolkien&quot;,&#10;      &quot;type&quot;: &quot;most_fields&quot;,&#10;      &quot;fields&quot;: [&#10;        &quot;book_author&quot;,&#10;        &quot;book_title&quot;,&#10;        &quot;summary&quot;,&#10;        &quot;category&quot;&#10;      ]&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/books/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 100,&#10;  &quot;sort&quot;: [&#10;    {&#10;      &quot;_score&quot;: {&#10;        &quot;order&quot;: &quot;desc&quot;&#10;      }&#10;    }&#10;  ],&#10;  &quot;query&quot;: {&#10;    &quot;multi_match&quot;: {&#10;      &quot;query&quot;: &quot;tolkien&quot;,&#10;      &quot;fields&quot;: [&#10;        &quot;book_author&quot;,&#10;        &quot;book_title&quot;,&#10;        &quot;summary&quot;,&#10;        &quot;category&quot;&#10;      ]&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/books/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;multi_match&quot;: {&#10;      &quot;query&quot;: &quot;tolkien&quot;,&#10;      &quot;fields&quot;: [&#10;        &quot;book_author&quot;,&#10;        &quot;book_title&quot;,&#10;        &quot;summary&quot;,&#10;        &quot;category&quot;&#10;      ]&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/books/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;match&quot;: {&#10;      &quot;book_author&quot;: {&#10;        &quot;query&quot;: &quot;tolkien&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+                <option name="path" value="/books/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="path" value="/books/_source/&lt;_id&gt;" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="path" value="/books/_alias/&lt;alias&gt; " />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="path" value="/_nodes/3mt1owliREmum4teMuS3kQ" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;bool&quot;: {&#10;      &quot;filter&quot;: {&#10;        &quot;bool&quot;: {&#10;          &quot;minimum_should_match&quot;: 1,&#10;          &quot;should&quot;: [&#10;            {&#10;              &quot;multi_match&quot;: {&#10;                &quot;lenient&quot;: true,&#10;                &quot;fields&quot;: &quot;*&quot;,&#10;                &quot;query&quot;: &quot;tolkien&quot;,&#10;                &quot;type&quot;: &quot;best_fields&quot;&#10;              }&#10;            }&#10;          ],&#10;          &quot;_name&quot;: &quot;KQL_filter&quot;&#10;        }&#10;      },&#10;      &quot;must&quot;: {&#10;        &quot;match_all&quot;: {}&#10;      }&#10;    }&#10;  },&#10;  &quot;highlight&quot;: {&#10;    &quot;pre_tags&quot;: [&#10;      &quot;@plugin-highlighted-field@&quot;&#10;    ],&#10;    &quot;post_tags&quot;: [&#10;      &quot;@/plugin-highlighted-field@&quot;&#10;    ],&#10;    &quot;fields&quot;: {&#10;      &quot;*&quot;: {}&#10;    },&#10;    &quot;fragment_size&quot;: 2147483647&#10;  }&#10;}" />
+                <option name="path" value="/books/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
                 <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
                 <option name="path" value="/books/_search" />
               </HistoryRequest>
               <HistoryRequest>
-                <option name="path" value="/_tasks/YthnQie0QPKSa1-nOJARxg:2134" />
-              </HistoryRequest>
-              <HistoryRequest>
-                <option name="path" value="/_nodes/YthnQie0QPKSa1-nOJARxg" />
+                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;bool&quot;: {&#10;      &quot;filter&quot;: {&#10;        &quot;bool&quot;: {&#10;          &quot;minimum_should_match&quot;: 1,&#10;          &quot;should&quot;: [&#10;            {&#10;              &quot;multi_match&quot;: {&#10;                &quot;lenient&quot;: true,&#10;                &quot;fields&quot;: &quot;*&quot;,&#10;                &quot;query&quot;: &quot;tolkien&quot;,&#10;                &quot;type&quot;: &quot;best_fields&quot;&#10;              }&#10;            }&#10;          ],&#10;          &quot;_name&quot;: &quot;KQL_filter&quot;&#10;        }&#10;      },&#10;      &quot;must&quot;: {&#10;        &quot;match_all&quot;: {}&#10;      }&#10;    }&#10;  },&#10;  &quot;highlight&quot;: {&#10;    &quot;pre_tags&quot;: [&#10;      &quot;@plugin-highlighted-field@&quot;&#10;    ],&#10;    &quot;post_tags&quot;: [&#10;      &quot;@/plugin-highlighted-field@&quot;&#10;    ],&#10;    &quot;fields&quot;: {&#10;      &quot;*&quot;: {}&#10;    },&#10;    &quot;fragment_size&quot;: 2147483647&#10;  }&#10;}" />
+                <option name="path" value="/books/_search" />
               </HistoryRequest>
               <HistoryRequest>
                 <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
@@ -74,11 +161,10 @@
               </HistoryRequest>
               <HistoryRequest>
                 <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
-                <option name="path" value="/.geoip_databases/_search" />
+                <option name="path" value="/book_ratings/_search" />
               </HistoryRequest>
               <HistoryRequest>
-                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
-                <option name="path" value="/books/_search" />
+                <option name="path" value="/_nodes/3mt1owliREmum4teMuS3kQ" />
               </HistoryRequest>
             </list>
           </value>
@@ -87,6 +173,16 @@
     </option>
     <option name="searchQueryHistory">
       <list>
+        <SearchQueryHistory>
+          <option name="indexPattern" value="books" />
+          <option name="json" value="{&quot;bool&quot;:{&quot;minimum_should_match&quot;:1,&quot;should&quot;:[{&quot;multi_match&quot;:{&quot;lenient&quot;:true,&quot;fields&quot;:&quot;*&quot;,&quot;query&quot;:&quot;tolkien&quot;,&quot;type&quot;:&quot;best_fields&quot;}}],&quot;_name&quot;:&quot;KQL_filter&quot;}}" />
+          <option name="query" value="tolkien" />
+        </SearchQueryHistory>
+        <SearchQueryHistory>
+          <option name="indexPattern" value="users" />
+          <option name="json" value="{&quot;bool&quot;:{&quot;minimum_should_match&quot;:1,&quot;should&quot;:[{&quot;multi_match&quot;:{&quot;lenient&quot;:true,&quot;fields&quot;:&quot;*&quot;,&quot;query&quot;:200000,&quot;type&quot;:&quot;best_fields&quot;}}],&quot;_name&quot;:&quot;KQL_filter&quot;}}" />
+          <option name="query" value="200000" />
+        </SearchQueryHistory>
         <SearchQueryHistory>
           <option name="indexPattern" value="users" />
           <option name="json" value="{&quot;bool&quot;:{&quot;minimum_should_match&quot;:1,&quot;should&quot;:[{&quot;multi_match&quot;:{&quot;lenient&quot;:true,&quot;fields&quot;:&quot;*&quot;,&quot;query&quot;:1273,&quot;type&quot;:&quot;best_fields&quot;}}],&quot;_name&quot;:&quot;KQL_filter&quot;}}" />

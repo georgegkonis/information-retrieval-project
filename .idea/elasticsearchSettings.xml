@@ -3,10 +3,10 @@
   <component name="ElasticsearchConfiguration">
     <option name="clusterConfigurations">
       <map>
-        <entry key="f933bb55-519c-4b04-87bb-8599267148c1">
+        <entry key="9266fe29-9405-4b26-bee6-f1384e217b8f">
           <value>
             <ClusterConfigInternal>
-              <option name="id" value="f933bb55-519c-4b04-87bb-8599267148c1" />
+              <option name="id" value="9266fe29-9405-4b26-bee6-f1384e217b8f" />
               <option name="label" value="@localhost" />
               <option name="url" value="http://localhost:9200" />
               <option name="version" value="1" />
