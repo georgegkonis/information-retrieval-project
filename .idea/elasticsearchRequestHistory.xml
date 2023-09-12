@@ -7,6 +7,36 @@
           <value>
             <list>
               <HistoryRequest>
+                <option name="body" value="{&#10;  &#10;}" />
+                <option name="path" value="/avg_ratings/_analyze" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="path" value="/avg_ratings/_analyze" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="path" value="/avg_ratings" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;explain&quot;: true&#10;}" />
+                <option name="path" value="/avg_ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
+                <option name="path" value="/avg_ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
+                <option name="path" value="/clustered_ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
+                <option name="path" value="/ratings/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  &quot;from&quot;: 0,&#10;  &quot;size&quot;: 50,&#10;  &quot;query&quot;: {&#10;    &quot;match_all&quot;: {}&#10;  }&#10;}" />
+                <option name="path" value="/books/_search" />
+              </HistoryRequest>
+              <HistoryRequest>
                 <option name="body" value="{&#10;  &quot;query&quot;: {&#10;    &quot;bool&quot;: {&#10;      &quot;must&quot;: [&#10;        {&#10;          &quot;term&quot;: {&#10;            &quot;uid&quot;: {&#10;              &quot;value&quot;: &quot;8&quot;&#10;            }&#10;          }&#10;        },&#10;        {&#10;          &quot;terms&quot;: {&#10;            &quot;isbn&quot;: [&#10;              &quot;0374157065&quot;&#10;            ]&#10;          }&#10;        }&#10;      ]&#10;    }&#10;  }&#10;}" />
                 <option name="path" value="/ratings/_search" />
               </HistoryRequest>
